@@ -5873,25 +5873,39 @@ li {
 /* ---- base ---- */
 body {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  background-color: #9E3549; }
 
 canvas {
   display: block;
   vertical-align: bottom; }
 
 h1 {
-  font-size: 60px;
+  font-size: 4em;
   color: whitesmoke;
   padding: 10px; }
 
 h2 {
-  font-size: 30px;
+  font-size: 2em;
   color: whitesmoke;
   padding: 10px; }
 
+h3 {
+  font-size: 2.5em;
+  font-weight: 600;
+  padding: 1em; }
+
+h4 {
+  font-size: 1.2em;
+  padding: 1em 0; }
+
+p {
+  font-size: 1.2em;
+  padding: .5em; }
+
 /* ---- Header ---- */
 header {
-  height: 90vh; }
+  height: 100vh; }
   header .nombre {
     color: whitesmoke;
     padding: 2em 0;
@@ -5907,7 +5921,7 @@ header {
   height: 2em; }
   .navbar .nav li a {
     color: #EF94A6;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: bold; }
     .navbar .nav li a:hover, .navbar .nav li a:active {
       color: #EF94A6;
@@ -5916,6 +5930,23 @@ header {
 .navbar-default {
   background-color: #1f1919;
   border-color: transparent; }
+
+/* ---- About Section ---- */
+#about {
+  color: #EF94A6;
+  background-color: #7E0019;
+  padding-top: 3em;
+  padding-bottom: 3em; }
+  #about .statement-container {
+    padding-left: 2em;
+    padding-right: 2em; }
+    #about .statement-container #statement, #about .statement-container #badges {
+      padding: 2em; }
+  #about .img-container {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 3em;
+    padding-bottom: 3em; }
 
 /* ---- stats.js ---- */
 .count-particles {
@@ -5952,7 +5983,7 @@ header {
 /* ---- particles.js container ---- */
 #particles-js {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-color: #211D1E;
   background-image: url("");
   background-size: cover;
