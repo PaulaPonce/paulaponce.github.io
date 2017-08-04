@@ -128,17 +128,28 @@ header{
 
 /* ---- Skills Section ---- */
 #skills{
-	color: $color-primary-3;
-	/* background-color:*/
+	color: $color-primary-4;
+	background-color: $color-primary-2;
 	@include paddingSection();
 	.devicon-container{
 		@include paddingInsideVertical();
 		i{
-			font-size: 6em;
-			color: $color-primary-2;
+			font-size: 4em;
+			color: $color-primary-3;
 			padding: 30px;
 			&:hover{
 				color: $color-primary-4;
+			}
+		}
+	}
+	#other-skills{
+		@include paddingInsideVertical();
+		.list-group{
+			.list-group-item{
+				background-color: $color-primary-2;
+				border: none;
+				border-radius: 4px;
+				display: inline-block;
 			}
 		}
 	}
