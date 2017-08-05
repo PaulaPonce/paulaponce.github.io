@@ -5901,6 +5901,7 @@ h4 {
 
 p {
   font-size: 1.2em;
+  line-height: 24px;
   padding: .5em; }
 
 /* ---- Header ---- */
@@ -5974,6 +5975,26 @@ header {
       border: none;
       border-radius: 4px;
       display: inline-block; }
+
+/* ---- Portfolio Section ---- */
+#portfolio {
+  color: #FAB2C0;
+  background-color: #7E0019;
+  padding-top: 3em;
+  padding-bottom: 3em; }
+  #portfolio .thumbnail {
+    background-color: #211D1E;
+    border: none; }
+    #portfolio .thumbnail .caption {
+      color: #FAB2C0; }
+      #portfolio .thumbnail .caption p {
+        font-size: .9em; }
+      #portfolio .thumbnail .caption .btn-primary {
+        color: #fff;
+        background-color: #9E3549;
+        border-color: #9E3549; }
+        #portfolio .thumbnail .caption .btn-primary:hover {
+          background-color: #7E0019; }
 
 /* ---- stats.js ---- */
 .count-particles {
