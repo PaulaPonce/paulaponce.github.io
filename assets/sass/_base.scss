@@ -184,6 +184,45 @@ header{
 }
 
 
+
+/* ---- Contact Section ---- */
+#contact{
+	color: $color-primary-4;
+	background-color: $color-primary-2;
+	@include paddingSection();
+	p{
+		font-size: 1em;
+	}
+	.list-group{
+		.list-group-item{
+			background-color: $color-primary-2;
+			border: none;
+			border-radius: 4px;
+			display: inline-block;
+			.fa{
+				color: $white;
+				font-size: 5em;
+				padding: 0 .2em;
+			}
+		}
+	}
+}
+
+
+
+/* ---- Footer ---- */
+#footer{
+	color: $color-primary-2;
+	@extend .navbar-default;
+	height: 5em;
+	p{
+		font-size: .9em;
+		padding: 2em;
+	}
+}
+
+
+
 /* ---- stats.js ---- */
 .count-particles{
 	background: #000022;
