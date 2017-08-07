@@ -5873,6 +5873,7 @@ li {
 	========================================================================== */
 /* ---- base ---- */
 body {
+  font-family: "Play", sans-serif;
   padding: 0;
   margin: 0;
   background-color: #9E3549; }
@@ -5883,15 +5884,18 @@ canvas {
 
 h1 {
   font-size: 4em;
+  font-family: "Share Tech Mono", monospace;
   color: whitesmoke;
   padding: 10px; }
 
 h2 {
   font-size: 2em;
+  font-family: "Share Tech Mono", monospace;
   color: whitesmoke;
   padding: 10px; }
 
 h3 {
+  font-family: "Share Tech Mono", monospace;
   font-size: 2.5em;
   font-weight: 600;
   padding: 1em; }
@@ -5925,13 +5929,16 @@ header {
     color: #FAB2C0;
     font-size: 1em;
     font-weight: bold; }
-    .navbar .nav li a:hover, .navbar .nav li a:active {
+    .navbar .nav li a:hover {
       color: #FAB2C0;
       background-color: rgba(192, 8, 45, 0.7); }
 
 .navbar-default, #footer {
   background-color: #1f1919;
   border-color: transparent; }
+  .navbar-default .navbar-nav > .active > a, #footer .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, #footer .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover, #footer .navbar-nav > .active > a:hover {
+    color: #FAB2C0;
+    background-color: rgba(192, 8, 45, 0.7); }
 
 /* ---- About Section ---- */
 #about {
