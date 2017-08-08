@@ -38,10 +38,19 @@ canvas{
 h1{
 	font-size: $h1_size;
 	@include headerTitle();
+	&.animated{
+		animation-duration: 1s;
+		animation-delay: 1s;
+	}
+	
 }
 h2{
 	font-size: $h2_size;
 	@include headerTitle();
+	&.animated{
+		animation-duration: 1s;
+		animation-delay: 2s;
+	}
 }
 h3{
 	font-family: $font-title;
@@ -72,6 +81,10 @@ header{
 		left: 50%;
 		transform: translate(-50%, -50%);
 		background-color: $header_bg;
+
+		-webkit-box-shadow: inset 0 0 10px $color-primary-1;
+			-moz-box-shadow: inset 0 0 10px $color-primary-1;
+				box-shadow: inset 0 0 10px $color-primary-1;
 	}
 }
 
@@ -80,6 +93,7 @@ header{
 .navbar{
 	margin-bottom: 0;
 	height: 2em;
+
 	.nav{
 		li{
 			a{
@@ -98,6 +112,10 @@ header{
 .navbar-default {
 	background-color: $navbar_bg;
 	border-color: transparent;
+	-webkit-box-shadow: 0 1px 10px $color-primary-1;
+		-moz-box-shadow: 0 1px 10px $color-primary-1;
+			box-shadow: 0 1px 10px $color-primary-1;
+
 	.navbar-nav > .active > a, .navbar-nav > .active > a:focus, .navbar-nav > .active > a:hover{
 		color: $color-primary-2;
 		background-color: $header_bg;
@@ -111,23 +129,30 @@ header{
 	color: $color-primary-2;
 	background-color: $color-primary-4;
 	@include paddingSection();
+
 	.statement-container{
 		@include paddingInsideSection();
 		#statement{
 			padding: 2em;
+			p{
+				line-height: 30px;
+			}
 		}
+
 		#badges{
-			@extend #statement;
+			padding: 1em 2em;
 			img{
 				width: 100px;
-				color: $white;
+				background-color: #fab2c0;
+				border-radius: 50px;
 			}
 		}
 	}
+
 	.img-container{
 		@include paddingInsideSection();
-		padding-top: 3em;
-		padding-bottom: 3em;
+		padding-top: 6em;
+		padding-bottom: 6em;
 	}
 }
 
@@ -138,17 +163,20 @@ header{
 	color: $color-primary-4;
 	background-color: $color-primary-2;
 	@include paddingSection();
+
 	.devicon-container{
-		@include paddingInsideVertical();
+		padding-top: 2.5em;
+		padding-bottom: 2.5em;
 		i{
 			font-size: 4em;
 			color: $color-primary-3;
-			padding: 30px;
+			padding: 60px;
 			&:hover{
 				color: $color-primary-4;
 			}
 		}
 	}
+
 	#other-skills{
 		@include paddingInsideVertical();
 		.list-group{
@@ -169,6 +197,7 @@ header{
 	color: $color-primary-2;
 	background-color: $color-primary-4;
 	@include paddingSection();
+
 	.thumbnail{
 		background-color: $color-primary-1;
 		border: none;
@@ -199,6 +228,7 @@ header{
 	p{
 		font-size: 1em;
 	}
+
 	.list-group{
 		.list-group-item{
 			background-color: $color-primary-2;

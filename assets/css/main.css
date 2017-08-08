@@ -5887,12 +5887,18 @@ h1 {
   font-family: "Share Tech Mono", monospace;
   color: whitesmoke;
   padding: 10px; }
+  h1.animated {
+    animation-duration: 1s;
+    animation-delay: 1s; }
 
 h2 {
   font-size: 2em;
   font-family: "Share Tech Mono", monospace;
   color: whitesmoke;
   padding: 10px; }
+  h2.animated {
+    animation-duration: 1s;
+    animation-delay: 2s; }
 
 h3 {
   font-family: "Share Tech Mono", monospace;
@@ -5919,7 +5925,10 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(192, 8, 45, 0.7); }
+    background-color: rgba(192, 8, 45, 0.7);
+    -webkit-box-shadow: inset 0 0 10px #211D1E;
+    -moz-box-shadow: inset 0 0 10px #211D1E;
+    box-shadow: inset 0 0 10px #211D1E; }
 
 /* ---- Navbar ---- */
 .navbar {
@@ -5935,7 +5944,10 @@ header {
 
 .navbar-default, #footer {
   background-color: #1f1919;
-  border-color: transparent; }
+  border-color: transparent;
+  -webkit-box-shadow: 0 1px 10px #211D1E;
+  -moz-box-shadow: 0 1px 10px #211D1E;
+  box-shadow: 0 1px 10px #211D1E; }
   .navbar-default .navbar-nav > .active > a, #footer .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, #footer .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover, #footer .navbar-nav > .active > a:hover {
     color: #FAB2C0;
     background-color: rgba(192, 8, 45, 0.7); }
@@ -5949,16 +5961,21 @@ header {
   #about .statement-container {
     padding-left: 2em;
     padding-right: 2em; }
-    #about .statement-container #statement, #about .statement-container #badges {
+    #about .statement-container #statement {
       padding: 2em; }
-    #about .statement-container #badges img {
-      width: 100px;
-      color: whitesmoke; }
+      #about .statement-container #statement p {
+        line-height: 30px; }
+    #about .statement-container #badges {
+      padding: 1em 2em; }
+      #about .statement-container #badges img {
+        width: 100px;
+        background-color: #fab2c0;
+        border-radius: 50px; }
   #about .img-container {
     padding-left: 2em;
     padding-right: 2em;
-    padding-top: 3em;
-    padding-bottom: 3em; }
+    padding-top: 6em;
+    padding-bottom: 6em; }
 
 /* ---- Skills Section ---- */
 #skills {
@@ -5967,12 +5984,12 @@ header {
   padding-top: 3em;
   padding-bottom: 3em; }
   #skills .devicon-container {
-    padding-top: 2em;
-    padding-bottom: 2em; }
+    padding-top: 2.5em;
+    padding-bottom: 2.5em; }
     #skills .devicon-container i {
       font-size: 4em;
       color: #C0082D;
-      padding: 30px; }
+      padding: 60px; }
       #skills .devicon-container i:hover {
         color: #7E0019; }
   #skills #other-skills {
