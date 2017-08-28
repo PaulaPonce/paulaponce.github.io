@@ -5936,7 +5936,8 @@ p {
   animation-duration: 1.5s; }
 
 .animation-zoom.animated {
-  animation-duration: 1.5s; }
+  animation-duration: 1.5s;
+  animation-delay: .5s; }
 
 /* ---- Header ---- */
 header {
@@ -6001,6 +6002,10 @@ header {
     padding-right: 2em;
     padding-top: 6em;
     padding-bottom: 6em; }
+    #about .img-container img {
+      -webkit-box-shadow: 0 1px 10px #211D1E;
+      -moz-box-shadow: 0 1px 10px #211D1E;
+      box-shadow: 0 1px 10px #211D1E; }
 
 /* ---- Skills Section ---- */
 #skills {
@@ -6082,7 +6087,7 @@ header {
 /* ---- Contact Section ---- */
 #contact {
   color: #7E0019;
-  background-color: #FAB2C0;
+  background-color: #f9d5dc;
   -webkit-box-shadow: inset 0px 11px 8px -10px #7E0019, inset 0px -11px 8px -10px #7E0019;
   -moz-box-shadow: inset 0px 11px 8px -10px #7E0019, inset 0px -11px 8px -10px #7E0019;
   box-shadow: inset 0px 11px 8px -10px #7E0019, inset 0px -11px 8px -10px #7E0019;
@@ -6091,7 +6096,7 @@ header {
   #contact p {
     font-size: 1em; }
   #contact .list-group .list-group-item {
-    background-color: #FAB2C0;
+    background-color: #f9d5dc;
     border: none;
     border-radius: 4px;
     display: inline-block; }

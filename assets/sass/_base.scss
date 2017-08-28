@@ -96,6 +96,7 @@ p{
 }
 .animation-zoom.animated{
 	animation-duration: 1.5s;
+	animation-delay: .5s;
 }
 
 
@@ -186,6 +187,9 @@ header{
 		@include paddingInsideSection();
 		padding-top: 6em;
 		padding-bottom: 6em;
+		img{
+		@include shadow-section();
+		}
 	}
 }
 
@@ -292,7 +296,7 @@ header{
 /* ---- Contact Section ---- */
 #contact{
 	color: $color-primary-4;
-	background-color: $color-primary-2;
+	background-color: $contact_bg;
 	@include shadow-section2();
 	@include paddingSection();
 	p{
@@ -301,7 +305,7 @@ header{
 
 	.list-group{
 		.list-group-item{
-			background-color: $color-primary-2;
+			background-color: $contact_bg;
 			border: none;
 			border-radius: 4px;
 			display: inline-block;
