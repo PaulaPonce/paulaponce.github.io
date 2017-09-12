@@ -149,12 +149,30 @@ header{
 		-moz-box-shadow: 0 1px 10px $color-primary-1;
 			box-shadow: 0 1px 10px $color-primary-1;
 
+	.navbar-collapse {
+		background-color: rgba(33, 29, 30, .9);
+		border-color: transparent;
+	}
+
+	.navbar-toggle {
+		border-color: #f9d5dc;
+		&:hover, &:focus {
+			background-color: #f9d5dc;
+		}
+
+		.icon-bar {
+			background-color: #d23b59;
+		}
+	}	
+
 	.navbar-nav > .active > a, .navbar-nav > .active > a:focus, .navbar-nav > .active > a:hover{
 		color: $color-primary-2;
 		background-color: $header_bg;
 		border-radius: 10px;
 	}
 }
+ 
+
 
 
 
@@ -179,6 +197,7 @@ header{
 				width: 100px;
 				background-color: #fab2c0;
 				border-radius: 50px;
+				margin: 0 auto;
 			}
 		}
 	}
@@ -188,7 +207,7 @@ header{
 		padding-top: 6em;
 		padding-bottom: 6em;
 		img{
-		@include shadow-section();
+			@include shadow-section();
 		}
 	}
 }

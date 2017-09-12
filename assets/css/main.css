@@ -5973,6 +5973,15 @@ header {
   -webkit-box-shadow: 0 1px 10px #211D1E;
   -moz-box-shadow: 0 1px 10px #211D1E;
   box-shadow: 0 1px 10px #211D1E; }
+  .navbar-default .navbar-collapse, #footer .navbar-collapse {
+    background-color: rgba(33, 29, 30, 0.9);
+    border-color: transparent; }
+  .navbar-default .navbar-toggle, #footer .navbar-toggle {
+    border-color: #f9d5dc; }
+    .navbar-default .navbar-toggle:hover, #footer .navbar-toggle:hover, .navbar-default .navbar-toggle:focus, #footer .navbar-toggle:focus {
+      background-color: #f9d5dc; }
+    .navbar-default .navbar-toggle .icon-bar, #footer .navbar-toggle .icon-bar {
+      background-color: #d23b59; }
   .navbar-default .navbar-nav > .active > a, #footer .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, #footer .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover, #footer .navbar-nav > .active > a:hover {
     color: #FAB2C0;
     background-color: rgba(192, 8, 45, 0.7);
@@ -5996,7 +6005,8 @@ header {
       #about .statement-container #badges img {
         width: 100px;
         background-color: #fab2c0;
-        border-radius: 50px; }
+        border-radius: 50px;
+        margin: 0 auto; }
   #about .img-container {
     padding-left: 2em;
     padding-right: 2em;
@@ -6163,5 +6173,42 @@ header {
   -webkit-box-shadow: 0 1px 10px #211D1E;
   -moz-box-shadow: 0 1px 10px #211D1E;
   box-shadow: 0 1px 10px #211D1E; }
+
+@media (max-width: 480px) {
+  #about .statement-container #statement {
+    padding: .5em; }
+  #about .statement-container #badges {
+    padding: 1em .5em; }
+
+  #skills .devicon-container {
+    padding-top: 0;
+    padding-bottom: 0; }
+
+  #contact .list-group .list-group-item {
+    padding: 40px 4px;
+    font-size: 90%; } }
+@media (min-width: 481px) and (max-width: 768px) {
+  #about .img-container {
+    width: 70%;
+    margin: 0 15%; }
+
+  #skills .devicon-container {
+    padding-top: 0;
+    padding-bottom: 0; }
+    #skills .devicon-container .list-group .list-group-item {
+      padding: 20px 60px; } }
+@media (min-width: 769px) and (max-width: 991px) {
+  #about .img-container {
+    width: 60%;
+    margin: 0 20%; } }
+/*
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+*/
 
 /*# sourceMappingURL=main.css.map */
